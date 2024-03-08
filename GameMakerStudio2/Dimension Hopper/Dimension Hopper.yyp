@@ -7,6 +7,7 @@
     {"id":{"name":"obj_dimension_manager","path":"objects/obj_dimension_manager/obj_dimension_manager.yy",},"order":3,},
     {"id":{"name":"spr_wallB","path":"sprites/spr_wallB/spr_wallB.yy",},"order":3,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":0,},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},"order":0,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
     {"id":{"name":"spr_sawbladeA","path":"sprites/spr_sawbladeA/spr_sawbladeA.yy",},"order":6,},
     {"id":{"name":"obj_wallB","path":"objects/obj_wallB/obj_wallB.yy",},"order":4,},
