@@ -7,7 +7,7 @@ state = list_of_states[0];
 
 // Movement speed related variables
 xspeed = 5; // Horizontal movement speed
-dash_mult = 10;//3; // Multiply by xspeed and add to x for dashing
+dash_mult = 3; // Multiply by xspeed and add to x for dashing
 yspeed = 0; // Vertical movement speed
 jump_speed = 50; // Velocity to be added when player attempts to jump
 
@@ -28,4 +28,4 @@ horizontal_movement = right - left;
 grounded = 0;
 double_jump = 0;
 can_dash = true;
-dir = 1; // 1 for left, -1 for right
+dir = 1; // -1 for left, 1 for right
