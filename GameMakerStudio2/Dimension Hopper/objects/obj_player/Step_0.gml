@@ -6,6 +6,7 @@ left = keyboard_check(vk_left) or keyboard_check(ord("A"));
 right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 jump = keyboard_check(vk_space);
 dash = keyboard_check(vk_shift);
+peak = keyboard_check(ord("E"));
 
 horizontal_movement = right - left;
 
@@ -45,7 +46,9 @@ switch(state){
 		
 	break;
 	case list_of_states[3]:
-		//can_dash = false;
+		can_dash = false;
+		alarm[0] = room_speed/2; // Add a half second delay before you can dash again
+		yspeed = 0;
 		if(!place_meeting(x+(xspeed*dash_mult*dir), y, obj_wall)){
 			x += xspeed*dash_mult*dir; // Dash in the direction you are facing
 		}else{
