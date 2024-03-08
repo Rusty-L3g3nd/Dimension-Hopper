@@ -26,7 +26,12 @@ peak = 0;
 
 // Decide which direction to move in, or not to move
 horizontal_movement = right - left;
-grounded = 0;
+grounded = 1;
 double_jump = 0;
 can_dash = true;
+<<<<<<< HEAD
 dir = 1; // -1 for left, 1 for right
+=======
+
+dir = 1; // 1 for left, -1 for right
+>>>>>>> pr/1

@@ -2,6 +2,8 @@
 // Finite State Machine for player
 
 // Update controlling variables by reading the keyboard
+
+
 left = keyboard_check(vk_left) or keyboard_check(ord("A"));
 right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 jump = keyboard_check(vk_space);
@@ -9,6 +11,7 @@ dash = keyboard_check(vk_shift);
 peak = keyboard_check(ord("E"));
 
 horizontal_movement = right - left;
+vertical_movement = -1*jump;
 
 if(horizontal_movement != 0){
 	dir = horizontal_movement;
@@ -27,12 +30,11 @@ if(dash and can_dash){ // If the player presses a horizontal movement key
 // Code for each state
 switch(state){
 	case list_of_states[0]: // "Idle" state
-		// Code to execute when idling
-		
+		// Code to execute when idling		
 	break;	
 	case list_of_states[1]: // "Moving" state
 		if(!place_meeting(x+xspeed*horizontal_movement, y, obj_wall)){ // Check if collision is not occuring
-			x += xspeed * horizontal_movement; // Move object
+			x=move(); // Move object
 		}else{
 			// Close the gap between the wall and the player
 			// DEBUG_0_Chinmaya: This is sheer brute-forcing, see if you can optimize this later
@@ -45,6 +47,19 @@ switch(state){
 		//image_xscale = horizontal_movement; // Make object face the direction it is moving in
 		
 	break;
+	case list_of_states[2]:
+		if(grounded and jump){
+			grounded=0
+			jumping()
+			grounded=1
+		}
+		else if(!grounded and jump){
+			if(double_jump){
+				jumping()
+			}
+			//else{}
+		}
+		
 	case list_of_states[3]:
 		can_dash = false;
 		alarm[0] = room_speed/2; // Add a half second delay before you can dash again
