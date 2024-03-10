@@ -14,7 +14,7 @@ obstacle_detected = 0;
 xspeed = 10; // Horizontal movement speed
 dash_mult = 30;//3; // Multiply by xspeed and add to x for dashing
 yspeed = 0; // Vertical movement speed
-jump_speed = 20; // Velocity to be added when player attempts to jump
+jump_speed = 21; // Velocity to be added when player attempts to jump
 terminal_speed = 64;
 
 // Two gravity speeds, one for going up, other for falling down

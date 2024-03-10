@@ -21,7 +21,7 @@ if(horizontal_movement != 0){
 grounded = place_meeting(x, y+1, obj_wall) or place_meeting(x, y+1, dimension_of_wall[global.dimension]);
 
 // Allow double jumping if grounded
-if(grounded){
+if(grounded and (!place_meeting(x, y-1, obj_wall) or !place_meeting(x, y-1, dimension_of_wall[global.dimension]))){
 	can_double_jump = 1;
 	if(alarm[0] <1){
 		can_dash = 1; // Allow dashing mid-air only once
