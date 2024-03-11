@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_button_play",
+  "name": "ob_button_credits",
   "spriteId": {
     "name": "spr_button",
     "path": "sprites/spr_button/spr_button.yy",
@@ -32,11 +32,10 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/object_button_parent/object_button_parent.yy",},"objectId":{"name":"object_button_parent","path":"objects/object_button_parent/object_button_parent.yy",},"value":"Play",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/object_button_parent/object_button_parent.yy",},"objectId":{"name":"object_button_parent","path":"objects/object_button_parent/object_button_parent.yy",},"value":"Credits",},
   ],
   "parent": {
     "name": "Objects",
