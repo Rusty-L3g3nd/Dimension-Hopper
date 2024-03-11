@@ -61,6 +61,9 @@ switch(state){
 				obj_stam_shift.stamina--;
 				can_double_jump = false;
 			};
+			if(!grounded)
+				audio_play_sound(snd_jmp,10,false);
+			//audio_play_sound(snd_jmp,0,false);//audio plays whenever space is pressed
 		};
 		
 		// If not on ground, change y position based on yspeed
