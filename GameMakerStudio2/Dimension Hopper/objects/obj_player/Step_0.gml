@@ -114,5 +114,6 @@ switch(state){
 				x += dir; // Increment/decrement x position by 1 until colliding with wall
 			};
 		};
+		audio_play_sound(snd_dsh,0,false);
 	break;
 }; 
