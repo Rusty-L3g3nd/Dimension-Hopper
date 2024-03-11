@@ -22,7 +22,7 @@
     {"id":{"name":"ob_button_credits","path":"objects/ob_button_credits/ob_button_credits.yy",},"order":11,},
     {"id":{"name":"obj_button_play","path":"objects/obj_button_play/obj_button_play.yy",},"order":10,},
     {"id":{"name":"obj_sawbladeA","path":"objects/obj_sawbladeA/obj_sawbladeA.yy",},"order":6,},
-    {"id":{"name":"snd_dsh2","path":"sounds/snd_dsh2/snd_dsh2.yy",},"order":4,},
+    {"id":{"name":"snd_dimension_chng","path":"sounds/snd_dimension_chng/snd_dimension_chng.yy",},"order":4,},
     {"id":{"name":"obj_sawbladeB","path":"objects/obj_sawbladeB/obj_sawbladeB.yy",},"order":5,},
     {"id":{"name":"obj_wallA","path":"objects/obj_wallA/obj_wallA.yy",},"order":2,},
     {"id":{"name":"spr_sawbladeB","path":"sprites/spr_sawbladeB/spr_sawbladeB.yy",},"order":5,},

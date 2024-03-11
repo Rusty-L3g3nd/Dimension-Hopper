@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_dsh2",
+  "name": "snd_dimension_chng",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_dsh2.mp3",
+  "soundFile": "snd_dimension_chng.mp3",
   "duration": 1.515102,
   "parent": {
     "name": "Sounds",
