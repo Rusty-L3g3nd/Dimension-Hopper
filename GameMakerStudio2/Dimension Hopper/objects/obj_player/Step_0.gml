@@ -4,8 +4,8 @@
 // Update controlling variables by reading the keyboard
 left = keyboard_check(vk_left) or keyboard_check(ord("A"));
 right = keyboard_check(vk_right) or keyboard_check(ord("D"));
-jump = keyboard_check_pressed(vk_space);
-dash = keyboard_check(vk_shift);
+jump = keyboard_check_pressed(vk_space) and obj_stam_shift.stamina;
+dash = keyboard_check(vk_shift) and obj_stam_shift.stamina;
 peak = keyboard_check(ord("E"));
 
 
@@ -32,7 +32,9 @@ if(grounded and (!place_meeting(x, y-1, obj_wall) or !place_meeting(x, y-1, dime
 
 // Decide state for Finite State Machine
 if(dash and can_dash){
-	state = list_of_states[1]; // "Dashing" state
+	if(!place_meeting(x+dir, y, obj_wall) and !place_meeting(x+dir, y, dimension_of_wall[global.dimension])){
+		state = list_of_states[1]; // "Dashing" state
+	};
 }else{
 	state = list_of_states[0]; // "Moving" state
 };
