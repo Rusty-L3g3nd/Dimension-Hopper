@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "Dimension Hopper",
   "resources": [
+    {"id":{"name":"Room4","path":"rooms/Room4/Room4.yy",},"order":3,},
     {"id":{"name":"obj_room","path":"objects/obj_room/obj_room.yy",},"order":8,},
     {"id":{"name":"obj_stam_shift","path":"objects/obj_stam_shift/obj_stam_shift.yy",},"order":7,},
     {"id":{"name":"obj_dimension_manager","path":"objects/obj_dimension_manager/obj_dimension_manager.yy",},"order":3,},
@@ -61,6 +62,7 @@
     {"roomId":{"name":"Rm_menu","path":"rooms/Rm_menu/Rm_menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},

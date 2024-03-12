@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-room_restart();
+move_wrap(1,1,sprite_width/2);
