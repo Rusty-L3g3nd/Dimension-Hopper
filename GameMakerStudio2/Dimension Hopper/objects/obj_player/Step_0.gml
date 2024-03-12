@@ -63,6 +63,9 @@ switch(state){
 				obj_stam_shift.stamina--;
 				can_double_jump = false;
 			};
+			if(!grounded)
+				audio_play_sound(snd_jmp,10,false);
+			//audio_play_sound(snd_jmp,0,false);//audio plays whenever space is pressed
 		};
 		
 		// If not on ground, change y position based on yspeed
@@ -113,5 +116,6 @@ switch(state){
 				x += dir; // Increment/decrement x position by 1 until colliding with wall
 			};
 		};
+		audio_play_sound(snd_dsh,0,false);
 	break;
 }; 
