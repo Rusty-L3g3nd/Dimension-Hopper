@@ -7,7 +7,7 @@ for(i=0;i<stamina_data[room-1];i++){
 		for(j=0;j<array_length(shift_data[room-1]);j++){
 			if((i+1) == shift_data[room-1][j]){
 				subimg = 2;
-				//break;
+				break;
 			};
 		};
 	}else{
