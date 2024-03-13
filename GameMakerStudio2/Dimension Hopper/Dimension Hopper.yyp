@@ -45,6 +45,7 @@
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":10,},
     {"id":{"name":"spr_dimension_manager","path":"sprites/spr_dimension_manager/spr_dimension_manager.yy",},"order":4,},
     {"id":{"name":"snd_btn","path":"sounds/snd_btn/snd_btn.yy",},"order":1,},
+    {"id":{"name":"Room4","path":"rooms/Room4/Room4.yy",},"order":4,},
     {"id":{"name":"spr_wallA","path":"sprites/spr_wallA/spr_wallA.yy",},"order":2,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
@@ -71,6 +72,7 @@
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},

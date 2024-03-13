@@ -4,8 +4,8 @@
 // Used for the finite state machine
 //image_speed=0;
 
-image_xscale = 1.5;
-image_yscale = 1.5;
+image_xscale = 2.5;
+image_yscale = 2.5;
 list_of_states = ["Moving", "Dashing","Idle"]; // "Jumping" and "Idle" merged with "Moving"
 state = list_of_states[0];
 

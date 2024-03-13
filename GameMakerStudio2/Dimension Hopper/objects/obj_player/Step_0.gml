@@ -8,19 +8,17 @@ jump = keyboard_check_pressed(vk_space) and obj_stam_shift.stamina;
 dash = keyboard_check(vk_shift) and obj_stam_shift.stamina;
 peak = keyboard_check(ord("E"));
 
-if(left){
-	sprite_index=spr_player_move_left;
-}
-else if(right){
-	sprite_index=spr_player_move_right;
-}
-
 // Set movement related variables
 horizontal_movement = right - left;
+
+if(horizontal_movement != 0){
+	sprite_index = spr_player_move_right
+};
 
 // Note last direction of movement for dashing direction
 if(horizontal_movement != 0){
 	dir = horizontal_movement;
+	image_xscale = 2.5*dir;
 };
 
 // Check if touching ground or dimensional ground
@@ -30,7 +28,7 @@ grounded = place_meeting(x, y+1, obj_wall) or place_meeting(x, y+1, dimension_of
 //check if idle and change sprite
 if(keyboard_check(vk_nokey)){
 	sprite_index=spr_player_idle;
-}
+};
 // Allow double jumping if grounded
 if(grounded and (!place_meeting(x, y-1, obj_wall) or !place_meeting(x, y-1, dimension_of_wall[global.dimension]))){
 	can_double_jump = 1;
@@ -67,19 +65,18 @@ switch(state){
 		};
 		
 		// If jump button is pressed, assign jump velocity to yspeed
-		if(jump){
+		if(jump and (!place_meeting(x, y-1, obj_wall) or !place_meeting(x, y-1, dimension_of_wall[global.dimension]))){
 			if(grounded){
 				yspeed = jump_speed;
 				obj_stam_shift.stamina--;
 				grounded = false;
+				audio_play_sound(snd_jmp,0,false);
 			}else if(can_double_jump){
 				yspeed = jump_speed;
 				obj_stam_shift.stamina--;
 				can_double_jump = false;
+				audio_play_sound(snd_jmp,0,false);
 			};
-			if(!grounded)
-				audio_play_sound(snd_jmp,10,false);
-			//audio_play_sound(snd_jmp,0,false);//audio plays whenever space is pressed
 		};
 		
 		// If not on ground, change y position based on yspeed
