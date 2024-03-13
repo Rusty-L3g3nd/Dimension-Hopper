@@ -8,6 +8,12 @@ jump = keyboard_check_pressed(vk_space) and obj_stam_shift.stamina;
 dash = keyboard_check(vk_shift) and obj_stam_shift.stamina;
 peak = keyboard_check(ord("E"));
 
+if(left){
+	sprite_index=spr_player_move_left;
+}
+else if(right){
+	sprite_index=spr_player_move_right;
+}
 
 // Set movement related variables
 horizontal_movement = right - left;
@@ -20,6 +26,11 @@ if(horizontal_movement != 0){
 // Check if touching ground or dimensional ground
 grounded = place_meeting(x, y+1, obj_wall) or place_meeting(x, y+1, dimension_of_wall[global.dimension]);
 
+
+//check if idle and change sprite
+if(keyboard_check(vk_nokey)){
+	sprite_index=spr_player_idle;
+}
 // Allow double jumping if grounded
 if(grounded and (!place_meeting(x, y-1, obj_wall) or !place_meeting(x, y-1, dimension_of_wall[global.dimension]))){
 	can_double_jump = 1;
@@ -42,6 +53,9 @@ if(dash and can_dash){
 // Code for each state
 switch(state){
 	case list_of_states[0]: // "Moving" state
+		if(keyboard_check(vk_nokey)){
+			sprite_index=spr_player_idle;//idle animation for sprite
+		}
 		if(!place_meeting(x+xspeed*horizontal_movement, y, obj_wall) and !place_meeting(x+xspeed*horizontal_movement, y, dimension_of_wall[global.dimension])){ // Check if collision is not occuring
 			x += xspeed * horizontal_movement; // Move object
 		}else{

@@ -2,7 +2,11 @@
 // Initializing player variables
 
 // Used for the finite state machine
-list_of_states = ["Moving", "Dashing"]; // "Jumping" and "Idle" merged with "Moving"
+//image_speed=0;
+
+image_xscale = 1.5;
+image_yscale = 1.5;
+list_of_states = ["Moving", "Dashing","Idle"]; // "Jumping" and "Idle" merged with "Moving"
 state = list_of_states[0];
 
 // Dimension collision
