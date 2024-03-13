@@ -39,6 +39,7 @@
     {"id":{"name":"spr_sawbladeB","path":"sprites/spr_sawbladeB/spr_sawbladeB.yy",},"order":5,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"spr_stam_shift","path":"sprites/spr_stam_shift/spr_stam_shift.yy",},"order":7,},
+    {"id":{"name":"obj_can","path":"objects/obj_can/obj_can.yy",},"order":14,},
     {"id":{"name":"object_button_parent","path":"objects/object_button_parent/object_button_parent.yy",},"order":9,},
     {"id":{"name":"snd_die","path":"sounds/snd_die/snd_die.yy",},"order":2,},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":10,},
