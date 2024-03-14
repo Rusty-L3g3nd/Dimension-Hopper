@@ -44,3 +44,4 @@ dir = 1; // -1 for left, 1 for right
 // Beautification
 fade_sprite = false;
 color = [c_blue, c_red];
+anim_state = "Idle";

@@ -11,9 +11,12 @@ peak = keyboard_check(ord("E"));
 // Set movement related variables
 horizontal_movement = right - left;
 
+/*
 if(horizontal_movement != 0){
-	sprite_index = spr_player_move_right
+	sprite_index = spr_player_move_right;
 };
+*/
+
 
 // Note last direction of movement for dashing direction
 if(horizontal_movement != 0){
@@ -30,10 +33,14 @@ if(obj_dimension_manager.gravity_world){
 }
 
 
+/*
 //check if idle and change sprite
 if(horizontal_movement == 0 and grounded){
 	sprite_index=spr_player_idle;
 };
+*/
+
+
 // Allow double jumping if grounded
 if(grounded and (!place_meeting(x, y-1, obj_wall) or !place_meeting(x, y-1, dimension_of_wall[global.dimension]))){
 	can_double_jump = 1;
@@ -56,9 +63,12 @@ if(dash and can_dash){
 // Code for each state
 switch(state){
 	case list_of_states[0]: // "Moving" state
+		/*
 		if(keyboard_check(vk_nokey)){
 			sprite_index=spr_player_idle;//idle animation for sprite
-		}
+		};
+		*/
+		
 		if(!place_meeting(x+xspeed*horizontal_movement, y, obj_wall) and !place_meeting(x+xspeed*horizontal_movement, y, dimension_of_wall[global.dimension])){ // Check if collision is not occuring
 			x += xspeed * horizontal_movement; // Move object
 		}else{
@@ -75,11 +85,13 @@ switch(state){
 				yspeed = jump_speed;
 				obj_stam_shift.stamina--;
 				grounded = false;
+				//sprite_index = spr_player_jmp;
 				audio_play_sound(snd_jmp,0,false);
 			}else if(can_double_jump){
 				yspeed = jump_speed;
 				obj_stam_shift.stamina--;
 				can_double_jump = false;
+				//sprite_index = spr_player_djmp;
 				audio_play_sound(snd_jmp,0,false);
 			};
 		};
@@ -106,7 +118,10 @@ switch(state){
 				};
 			};
 		}else{
-			yspeed = 0;
+			//if(yspeed != 0){
+				//sprite_index = spr_player_land;
+				yspeed = 0;
+			//};
 		};
 		
 		// DEBUG_1_Chinmaya: The code below will cause object to disappear when not moving
@@ -144,4 +159,8 @@ switch(state){
 	break;
 	case list_of_states[3]:
 	break;
-}; 
+};
+
+while(place_meeting(x, y, obj_wall) or place_meeting(x, y, dimension_of_wall[global.dimension])){
+	y--;
+};

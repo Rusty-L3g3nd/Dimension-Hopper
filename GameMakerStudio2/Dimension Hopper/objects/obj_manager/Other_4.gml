@@ -16,3 +16,5 @@ for(i=2;i>=0;i--){
 	inst = instance_create_layer(room_width/2, 180+(360*i), "Fade", obj_fade);
 	inst.alarm[0] = speeds[i];
 };
+
+bgID = layer_background_get_id("Background");

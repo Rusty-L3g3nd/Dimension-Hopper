@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_player_grav",
   "spriteId": {
-    "name": "spr_player2",
-    "path": "sprites/spr_player2/spr_player2.yy",
+    "name": "spr_idle1",
+    "path": "sprites/spr_idle1/spr_idle1.yy",
   },
   "solid": false,
   "visible": true,
