@@ -20,6 +20,8 @@
     {"id":{"name":"scr_tiler","path":"scripts/scr_tiler/scr_tiler.yy",},"order":1,},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},"order":15,},
     {"id":{"name":"spr_fall_loop","path":"sprites/spr_fall_loop/spr_fall_loop.yy",},"order":5,},
+    {"id":{"name":"obj_R","path":"objects/obj_R/obj_R.yy",},"order":22,},
+    {"id":{"name":"spr_R","path":"sprites/spr_R/spr_R.yy",},"order":31,},
     {"id":{"name":"scr_raycast","path":"scripts/scr_raycast/scr_raycast.yy",},"order":0,},
     {"id":{"name":"spr_idle2","path":"sprites/spr_idle2/spr_idle2.yy",},"order":1,},
     {"id":{"name":"spr_platformB_right","path":"sprites/spr_platformB_right/spr_platformB_right.yy",},"order":2,},
