@@ -11,19 +11,6 @@ peak = keyboard_check(ord("E"));
 // Set movement related variables
 horizontal_movement = right - left;
 
-switch(global.dimension){
-	case 0:
-		grav_going_up = -0.1;
-		falling_grav = -0.1;
-		terminal_speed = 16;
-	break;
-	default:
-		grav_going_up = 2;
-		falling_grav = 3;
-		terminal_speed = 64;
-	break;
-};
-
 if(horizontal_movement != 0){
 	sprite_index = spr_player_move_right
 };

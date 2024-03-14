@@ -6,7 +6,7 @@
 
 image_xscale = 2.5;
 image_yscale = 2.5;
-list_of_states = ["Moving", "Dashing","Idle"]; // "Jumping" and "Idle" merged with "Moving"
+list_of_states = ["Moving", "Dashing","Idle", "Dying"]; // "Jumping" and "Idle" merged with "Moving"
 state = list_of_states[0];
 
 // Dimension collision
@@ -40,3 +40,7 @@ grounded = 0;
 can_double_jump = 0;
 can_dash = true;
 dir = 1; // -1 for left, 1 for right
+
+// Beautification
+fade_sprite = false;
+color = [c_blue, c_red];

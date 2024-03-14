@@ -23,10 +23,15 @@ if(horizontal_movement != 0){
 
 // Check if touching ground or dimensional ground
 grounded = place_meeting(x, y+1, obj_wall) or place_meeting(x, y+1, dimension_of_wall[global.dimension]);
+if(obj_dimension_manager.gravity_world){
+	if(!global.dimension){
+		grounded = false;
+	};
+}
 
 
 //check if idle and change sprite
-if(keyboard_check(vk_nokey)){
+if(horizontal_movement == 0 and grounded){
 	sprite_index=spr_player_idle;
 };
 // Allow double jumping if grounded
@@ -117,6 +122,7 @@ switch(state){
 		// Dash by changing x position
 		xpos_offset = xspeed*dash_mult*dir;
 		
+		init_pos = x;
 		final_pos = x+xpos_offset;
 		//wall_at
 		
@@ -127,6 +133,15 @@ switch(state){
 				x += dir; // Increment/decrement x position by 1 until colliding with wall
 			};
 		};
+		
+		final_pos = x;
+		if(init_pos != final_pos){
+			fade_sprite = true;
+			alarm[1] = room_speed/30;
+		};
+		
 		audio_play_sound(snd_dsh,0,false);
+	break;
+	case list_of_states[3]:
 	break;
 }; 
