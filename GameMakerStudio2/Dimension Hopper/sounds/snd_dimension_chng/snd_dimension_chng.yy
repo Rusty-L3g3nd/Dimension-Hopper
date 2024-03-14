@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_dimension_chng.mp3",
-  "duration": 1.515102,
+  "duration": 1.802449,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

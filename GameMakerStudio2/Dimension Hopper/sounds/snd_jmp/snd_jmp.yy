@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_jmp.wav",
-  "duration": 0.180317,
+  "duration": 0.324082,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
