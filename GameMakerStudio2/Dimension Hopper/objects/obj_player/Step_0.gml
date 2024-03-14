@@ -8,6 +8,15 @@ jump = keyboard_check_pressed(vk_space) and obj_stam_shift.stamina;
 dash = keyboard_check(vk_shift) and obj_stam_shift.stamina;
 peak = keyboard_check(ord("E"));
 
+if(instance_exists(obj_terminal)){
+	if(obj_terminal.attached){
+		jump = 0;
+		dash = 0;
+		left = 0;
+		right = 0;
+	};
+};
+
 // Set movement related variables
 horizontal_movement = right - left;
 
