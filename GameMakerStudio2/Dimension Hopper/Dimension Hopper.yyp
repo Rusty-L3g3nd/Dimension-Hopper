@@ -4,6 +4,7 @@
   "name": "Dimension Hopper",
   "resources": [
     {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},"order":3,},
+    {"id":{"name":"Room9","path":"rooms/Room9/Room9.yy",},"order":16,},
     {"id":{"name":"spr_platformB_left","path":"sprites/spr_platformB_left/spr_platformB_left.yy",},"order":0,},
     {"id":{"name":"sprite_living_tissue_tile2","path":"sprites/sprite_living_tissue_tile2/sprite_living_tissue_tile2.yy",},"order":17,},
     {"id":{"name":"spr_run_start","path":"sprites/spr_run_start/spr_run_start.yy",},"order":0,},
@@ -140,6 +141,7 @@
     {"roomId":{"name":"Room6","path":"rooms/Room6/Room6.yy",},},
     {"roomId":{"name":"Room7","path":"rooms/Room7/Room7.yy",},},
     {"roomId":{"name":"Room8","path":"rooms/Room8/Room8.yy",},},
+    {"roomId":{"name":"Room9","path":"rooms/Room9/Room9.yy",},},
     {"roomId":{"name":"Room10","path":"rooms/Room10/Room10.yy",},},
     {"roomId":{"name":"Room11","path":"rooms/Room11/Room11.yy",},},
     {"roomId":{"name":"Room12","path":"rooms/Room12/Room12.yy",},},
