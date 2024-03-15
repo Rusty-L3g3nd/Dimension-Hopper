@@ -7,6 +7,8 @@ right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 jump = keyboard_check_pressed(vk_space) and obj_stam_shift.stamina;
 dash = keyboard_check(vk_shift) and obj_stam_shift.stamina;
 peak = keyboard_check(ord("E"));
+falling_grav = 3;
+
 
 if(instance_exists(obj_terminal)){
 	if(obj_terminal.attached){
@@ -14,6 +16,7 @@ if(instance_exists(obj_terminal)){
 		dash = 0;
 		left = 0;
 		right = 0;
+		falling_grav = 0;
 	};
 };
 
