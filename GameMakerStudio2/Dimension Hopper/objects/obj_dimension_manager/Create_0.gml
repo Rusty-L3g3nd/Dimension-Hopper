@@ -3,4 +3,4 @@
 
 //gravity_shifting = [3];
 gravity_world = false;
-grav_lvls = [5];
+grav_lvls = [0];

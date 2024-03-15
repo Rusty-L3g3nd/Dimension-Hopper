@@ -1,6 +1,7 @@
 /// @description Insert description here
 // Initializing player variables
 
+
 // Used for the finite state machine
 //image_speed=0;
 

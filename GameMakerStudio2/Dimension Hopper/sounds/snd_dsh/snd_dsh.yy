@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_dsh.mp3",
-  "duration": 1.802449,
+  "soundFile": "snd_dsh.wav",
+  "duration": 0.399433,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

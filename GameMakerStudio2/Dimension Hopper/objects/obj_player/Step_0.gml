@@ -105,6 +105,9 @@ switch(state){
 			};
 		};
 		
+		// Wrapping
+		move_wrap(true, false, 0);
+		
 		// If not on ground, change y position based on yspeed
 		if(yspeed != 0){
 			// Update yposition code goes here
