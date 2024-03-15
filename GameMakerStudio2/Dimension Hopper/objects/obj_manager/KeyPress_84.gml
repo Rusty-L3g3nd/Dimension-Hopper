@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if(room == 13){
+if(room == 14){
 	instance_destroy(all);
 	room_goto(room_first);
 }else{
